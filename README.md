@@ -12,10 +12,8 @@ conda install tensorboard=1.14.0
 conda install numpy=1.16 scipy=1.4 h5py=2.10 future
 ```
 
-## Download
-- Raw datasets: download [NGSIM](https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj) and [highD](https://www.highd-dataset.com/), then process them into the required format (.mat) using the preprocessing [code](https://github.com/Haoran-SONG/PiP-Planning-informed-Prediction/tree/master/preprocess).
-- Processed datasets: download from this [link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/hsongad_connect_ust_hk/Evo9MNDPLhZAn-ygM1-GOVQB-ULdHzx4WurTZ1j-Bk_JNQ?e=YdG7Xk) and save them in datasets/.
-- Trained models: download from this [link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/hsongad_connect_ust_hk/EtttBXgentVNhb3QuYSaK2kBTh0vbL0sno1S3p9bnuKcFA?e=9wb7rQ) and save them in trained_models/.
+## Dataset
+Please refer to this [website](https://github.com/Haoran-SONG/PiP-Planning-informed-Prediction) for data processing
 
 ## Running
 
@@ -31,4 +29,8 @@ python evaluate.py --name ngsim_model --batch_size 64 \
     --test_set ./datasets/NGSIM/test.mat
 ```
 
+
+## Acknowledgments
+We would like to express our gratitude to the authors of the following repository for their excellent work and contributions, which greatly inspired this project:
+- [PiP](https://github.com/Haoran-SONG/PiP-Planning-informed-Prediction)
 
